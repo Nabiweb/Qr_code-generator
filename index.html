@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>QR Code generator</title>
         <meta charset="UTF-8">
@@ -7,10 +7,20 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div id="videoback">
+            <video autoplay loop muted>
+                <source src="video.mp4">
+            </video>
+        </div>
         <div id="main">
+            <video autoplay loop muted>
+                <source src="video.mp4">
+            </video>
             <label for="textInput"></label>
-            <input type="text" id="textInput" name="textInput" placeholder="  Enter a link">
-
+            <input type="text" id="textInput" name="textInput" placeholder="Enter a link">
+            <div id="voice" onclick="voice()">
+             <img src="speaker.png" id="speaker">
+            </div>
             <button type="submit" id="search">Search</button>
 
             <span id="loading"></span>
